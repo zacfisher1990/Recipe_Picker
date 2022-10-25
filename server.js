@@ -2,6 +2,7 @@ const path = require('path');
 const express = require('express');
 const session = require('express-session');
 const exphbs = require('express-handlebars');
+require('dotenv').config();
 
 const routes = require('./routes');
 const helpers = require('./utils/helpers');
@@ -9,7 +10,7 @@ const helpers = require('./utils/helpers');
 const sequelize = require('./config');
 
 // Create a new sequelize store using the express-session package
-const SequelizeStore = require('connect-session-sequelize')(session.Store);
+// const SequelizeStore = require('connect-session-sequelize')(session.Store);
 
 const app = express();
 const PORT = process.env.PORT || 3001;
@@ -18,13 +19,13 @@ const hbs = exphbs.create({ helpers });
 
 // Configure and link a session object with the sequelize store
 const sess = {
-  secret: 'Super secret secret',
-  cookie: {},
+  secret: process.env.SESSION_SECRET,
+  //cookie: {},
   resave: false,
   saveUninitialized: true,
-  store: new SequelizeStore({
-    db: sequelize
-  })
+  // store: new SequelizeStore({
+  //   db: sequelize
+  // })
 };
 
 // Add express-session and store as Express.js middleware
