@@ -1,9 +1,9 @@
 const router = require('express').Router();
 
 const api = require('./api');
-const { home } = require('../controllers/homeController');
+const { login } = require('../controllers/loginController');
 
-router.get('/', home);
+router.get('/', login);
 //router.use('/api', api);
 
 module.exports = router;
