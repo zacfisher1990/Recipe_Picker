@@ -6,8 +6,8 @@
     </div>
     <button class="btn btn-outline-secondary" type="button" id="button-addon2">Button</button>
 </div>
-<div class="container ">
-    <div class="row d-flex justify-content-around">
+<div class="container mb-5">
+    <div class="row">
         <div class="col-6 border border-dark">
             <h2 class="text-center">Recipes:</h2>
             <div class="border border-dark mb-5">
@@ -26,5 +26,95 @@
         </div>
     </div>
 </div>
-
-
+<div class="tabs is-boxed is-centered mb-5">
+  <ul>
+    <li class="is-active" data-target="monday">
+      <a>
+        <span>Monday</span>
+      </a>
+    </li>
+    <li data-target="tuesday">
+      <a>
+        <span>Tuesday</span>
+      </a>
+    </li>
+    <li data-target="wednesday">
+      <a>
+        <span>Wednesday</span>
+      </a>
+    </li>
+    <li data-target="thursday">
+      <a>
+        <span>Thursday</span>
+      </a>
+    </li>
+    <li data-target="friday">
+      <a>
+        <span>Friday</span>
+      </a>
+    </li>
+    <li data-target="saturday">
+      <a>
+        <span>Saturday</span>
+      </a>
+    </li>
+    <li data-target="sunday">
+      <a>
+        <span>Sunday</span>
+      </a>
+    </li>
+  </ul>
+</div>
+<div class="ppx-2" id="tab-content">
+    <div id="monday">
+        <h3>Recipes Saved:</h3>
+        <ul id="mondaySaved">
+            <!-- Where the saved recipes will be saved in each tab -->
+        </ul>
+    </div>
+    <div id="tuesday" class="is-hidden">
+        <h3>Recipes Saved:</h3>
+        <ul id="tuesdaySaved">
+            <!-- Where the saved recipes will be saved in each tab -->
+        </ul>
+    </div>
+    <div id="wednesday" class="is-hidden">
+        <h3>Recipes Saved:</h3>
+        <ul id="wednesdaySaved">
+            <!-- Where the saved recipes will be saved in each tab -->
+        </ul>
+    </div>
+    <div id="thursday" class="is-hidden">
+        <h3>Recipes Saved:</h3>
+        <ul id="thursdaySaved">
+            <!-- Where the saved recipes will be saved in each tab -->
+        </ul>
+    </div>
+    <div id="friday" class="is-hidden">
+        <h3>Recipes Saved:</h3>
+        <ul id="fridaySaved">
+            <!-- Where the saved recipes will be saved in each tab -->
+        </ul>
+    </div>
+    <div id="saturday" class="is-hidden">
+        <h3>Recipes Saved:</h3>
+        <ul id="saturdaySaved">
+            <!-- Where the saved recipes will be saved in each tab -->
+        </ul>
+    </div>
+    <div id="sunday" class="is-hidden">
+        <h3>Recipes Saved:</h3>
+        <ul id="sundaySaved">
+            <!-- Where the saved recipes will be saved in each tab -->
+        </ul>
+    </div>
+</div>
+<div class="d-flex justify-content-center mb-5">
+    <label class="checkbox">
+        <input type="checkbox">
+        Save my preferences
+    </label>
+</div>
+<div class="d-flex justify-content-center">
+    <button type="button" class="btn btn-outline-success">Save Recipes</button>
+</div>
