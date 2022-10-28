@@ -2,7 +2,7 @@ console.log("hello");
 
 
 const searchButton = document.getElementById('button-addon2');
-const apiKey = 'ac0d6fdd42e9490c9186a4a13ee7ab15';
+const apiKey = 'apiKey=ac0d6fdd42e9490c9186a4a13ee7ab15';
 //let searchedIngredient = [];
 
 
@@ -11,15 +11,15 @@ const apiKey = 'ac0d6fdd42e9490c9186a4a13ee7ab15';
 // event listener for button
 searchButton.addEventListener('click', function(event){
     event.preventDefault();
+    
+    
     const ingredientInput = document.getElementById('floatingInput').value;
+    const spoonacularURL = 'https://api.spoonacular.com/recipes/findByIngredients?' + apiKey + '&ingredients=' + ingredientInput + "&number=2";
     
     console.log(ingredientInput);
-    
-    //fetch api data
-    const spoonacularURL = 'https://api.spoonacular.com/recipes/findByIngredients?' + apiKey + '&ingredients=' + ingredientInput;
-    
     console.log(spoonacularURL);
     
+    //fetch api data
     fetch(spoonacularURL) //calls api
    
     .then(function (response) {
