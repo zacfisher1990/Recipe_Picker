@@ -7,6 +7,6 @@ router.get('/', login);
 //router.use('/api', api);
 
 const recipeRoutes = require('./api/recipe-routes');
-router.use('./recipe-routes', recipeRoutes);
+//router.use('./recipe-routes', recipeRoutes);
 
 module.exports = router;
