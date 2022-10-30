@@ -1,6 +1,8 @@
 const router = require('express').Router();
 const { User } = require('../../models');
 
+
+// Login
 router.post('/login', async (req, res) => {
     try {
         const userData = await User.findOne({where: { email: req.body.email } });
@@ -11,6 +13,8 @@ router.post('/login', async (req, res) => {
             return;
         }
 
+        const validPassword = await userData.checkPassword(req.body.password);
+
         if(!validPassword) {
             res
             .status(400)
@@ -18,6 +22,7 @@ router.post('/login', async (req, res) => {
             return;
         }
 
+        // Once the user successfully logs in, set up the sessions variable 'loggedIn'
         req.session.save(()=>{
             req.session.user_id = userData.id;
             req.session.logged_in = true;
