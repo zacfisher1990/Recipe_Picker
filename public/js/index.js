@@ -12,6 +12,20 @@ const picture3 = document.getElementById('picture3');
 const picture4 = document.getElementById('picture4');
 const picture5 = document.getElementById('picture5');
 
+const saveButton1 = document.getElementById('save-btn1');
+const saveButton2 = document.getElementById('save-btn2');
+const saveButton3 = document.getElementById('save-btn3');
+const saveButton4 = document.getElementById('save-btn4');
+const saveButton5 = document.getElementById('save-btn5');
+
+saveButton1.style.display = "none";
+saveButton2.style.display = "none";
+saveButton3.style.display = "none";
+saveButton4.style.display = "none";
+saveButton5.style.display = "none";
+
+
+
 const searchButton = document.getElementById('button-addon2');
 const apiKey = 'apiKey=ac0d6fdd42e9490c9186a4a13ee7ab15';
 //let searchedIngredient = [];
@@ -45,23 +59,27 @@ searchButton.addEventListener('click', function(event){
     .then(function (data) {
     console.log(data); //console logs data from api
     //todo: have recipes show up in recipe list
-    fetchedRecipes1.textContent = data[0].title;
-    //todo: create save button 
-    const saveBtn1 = document.createElement('button');
-    saveBtn1.innerHTML = 'Save Recipe';
-    picture1.src = data[0].image;
+
+    // RECIPE 1
+    fetchedRecipes1.textContent = data[0].title;  // TITLE
+    saveButton1.style.display = "block";          // SAVE BUTTON
+    picture1.src = data[0].image;                 // IMAGE
 
 
     fetchedRecipes2.textContent = data[1].title;
+    saveButton2.style.display = "block"; 
     picture2.src = data[1].image;
 
     fetchedRecipes3.textContent = data[2].title;
+    saveButton3.style.display = "block"; 
     picture3.src = data[2].image;
     
     fetchedRecipes4.textContent = data[3].title;
+    saveButton4.style.display = "block"; 
     picture4.src = data[3].image;
 
     fetchedRecipes5.textContent = data[4].title;
+    saveButton5.style.display = "block"; 
     picture5.src = data[4].image;
 
         //todo: links for recipes
@@ -72,7 +90,7 @@ searchButton.addEventListener('click', function(event){
 })
 
 
-// homepage tabs js
+// homepage week tabs js
 
 const tabs = document.querySelectorAll('.tabs li');
 const tabContentBoxes = document.querySelectorAll('#tab-content > div');
