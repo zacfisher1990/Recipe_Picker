@@ -7,7 +7,7 @@ require('dotenv').config();
 const routes = require('./routes');
 const helpers = require('./utils/helpers');
 
-const sequelize = require('./config');
+const sequelize = require('./config/index');
 
 // Create a new sequelize store using the express-session package
 // const SequelizeStore = require('connect-session-sequelize')(session.Store);

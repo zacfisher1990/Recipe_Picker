@@ -238,7 +238,8 @@ searchButton.addEventListener('click', function(event){
             saturday.textContent = fetchedRecipes1.textContent = data[4].title;
         }
         if (sundayDiv.className !== 'is-hidden') {
-            sunday.textContent = fetchedRecipes1.textContent = data[4].title;
+            sunday.textContent = fetchedRecipes1.textContent = data[4
+            ].title;
         }
         
         
