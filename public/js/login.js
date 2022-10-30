@@ -1,5 +1,4 @@
 const signInButton = document.getElementById("sign-in");
-const registerButton = document.getElementById("")
 
 
 signInButton.addEventListener('click', async (event) => {
