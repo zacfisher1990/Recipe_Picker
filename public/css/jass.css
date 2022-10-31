@@ -1,0 +1,41 @@
+#logoutBtn {
+    position:fixed;
+    right:10px;
+    top:5px;
+}
+
+#clearBtn {
+    margin-bottom: 30px;
+}
+
+#tab-content {
+    margin-bottom: 50px;
+}
+
+#mondaySaved {
+    list-style-type: solid;
+}
+
+#tuesdaySaved {
+    list-style-type: solid;
+}
+
+#wednesday {
+    list-style-type: solid;
+}
+
+#thursday {
+    list-style-type: solid;
+}
+
+#fridaySaved {
+    list-style-type: solid;
+}
+
+#saturdaySaved {
+    list-style-type: solid;
+}
+
+#sundaySaved {
+    list-style-type: solid;
+}

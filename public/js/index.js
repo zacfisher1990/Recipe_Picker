@@ -274,3 +274,11 @@ tabs.forEach((tab) =>{
         });
     });
 });
+
+// logout button
+
+const logoutBtn = document.getElementById('logoutBtn');
+
+logoutBtn.addEventListener('click', function() {
+    document.location.replace('/');
+});
