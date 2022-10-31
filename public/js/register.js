@@ -21,5 +21,8 @@ signUpButton.addEventListener('click', async (event) => {
       } else {
         alert(response.statusText);
       }
+      console.log(email);
+      console.log(password);
+      console.log(response);
     }
   });
