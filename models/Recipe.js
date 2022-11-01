@@ -12,7 +12,7 @@ Recipe.init(
             allowNull: false,
             autoIncrement: true
         },
-            recipe_name: {
+        recipe_name: {
                 type: DataTypes.STRING,
                 allowNull: false
         },
