@@ -21,8 +21,9 @@ Recipe.init(
             references: {
                 model: 'user',
                 key: 'id'
-            }
+            }  
         }
+        
     },
     {
     sequelize,
