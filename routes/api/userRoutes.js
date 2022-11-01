@@ -14,7 +14,7 @@ router.post('/register', async (req, res) => {
             res.status(400).json({message: 'passwords do not match'})
         }
 
-        const newUser = User.
+        // const newUser = User.
         // create new user, request new sessions to keep user login,
 
     }catch (err){
@@ -33,6 +33,8 @@ router.post('/login', async (req, res) => {
             return;
         }
 
+        const validPassword = await userData.checkPassword(req.body.password);
+
         if(!validPassword) {
             res
             .status(400)
@@ -40,6 +42,7 @@ router.post('/login', async (req, res) => {
             return;
         }
 
+        // Once the user successfully logs in, set up the sessions variable 'loggedIn'
         req.session.save(()=>{
             req.session.user_id = userData.id;
             req.session.logged_in = true;
@@ -51,7 +54,9 @@ router.post('/login', async (req, res) => {
     }
 });
 
+// logout
 router.post('/logout', (req, res) => {
+    // when the user logs out, destroy the session
     if (req.session.logged_in) {
         req.session.destroy(() => {
             res.status(204).end();
