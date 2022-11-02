@@ -1,9 +1,39 @@
-@background: red;
+//wall color themes
+@background: rgb(77, 133, 163);
+@background-color: rgb(134, 129, 129);
+@head-color: rgb(0, 0, 112);
+//text variables 
+@secondary: #485fc7;
+@primary: rgb(0, 0, 0);
+@header-text-color: rgb(228, 228, 228);
+@font-style: fantasy;
 
 body{
-    background-color: @background;
+    background: @background;
+}
+
+main{
+    background-color: @background-color;
+    box-shadow: 10px;
+    border-radius: 6;
+    
 }
 
 header {
-    color: @background
+    color: @header-text-color;
+    background-color: @head-color;
+    font-family: @font-style;
+}
+
+main{
+    font-family: @font-style;
+}
+
+button{
+    color: @primary;
+    
+}
+
+button:hover{
+    color: @secondary;
 }
