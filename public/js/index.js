@@ -45,7 +45,7 @@ const apiKey = 'apiKey=ac0d6fdd42e9490c9186a4a13ee7ab15';
 
 //todo: fetch recipe_names from db and display for days of week
 
-monday.textContent = fetch()
+// monday.textContent = fetch('/api/users/')
 
 
 // event listener for button
