@@ -1,22 +1,57 @@
 [
     {
         "email": "blake@gmail.com",
-        "password": "password1234"
+        "password": "password1234",
+        "savedRecipesMonday": "",
+        "savedRecipesTuesday": "",
+        "savedRecipesWednesday": "",
+        "savedRecipesThursday": "",
+        "savedRecipesFriday": "",
+        "savedRecipesSaturday": "",
+        "savedRecipesSunday": ""
     },
     {
         "email": "brendan@gmail.com",
-        "password": "password1234"
+        "password": "password1234",
+        "savedRecipesMonday": "",
+        "savedRecipesTuesday": "",
+        "savedRecipesWednesday": "",
+        "savedRecipesThursday": "",
+        "savedRecipesFriday": "",
+        "savedRecipesSaturday": "",
+        "savedRecipesSunday": ""
     },
     {
         "email": "ricky@gmail.com",
-        "password": "password1234"
+        "password": "password1234",
+        "savedRecipesMonday": "",
+        "savedRecipesTuesday": "",
+        "savedRecipesWednesday": "",
+        "savedRecipesThursday": "",
+        "savedRecipesFriday": "",
+        "savedRecipesSaturday": "",
+        "savedRecipesSunday": ""
     },
     {
         "email": "zac@gmail.com",
-        "password": "password1234"
+        "password": "password1234",
+        "savedRecipesMonday": "",
+        "savedRecipesTuesday": "",
+        "savedRecipesWednesday": "",
+        "savedRecipesThursday": "",
+        "savedRecipesFriday": "",
+        "savedRecipesSaturday": "",
+        "savedRecipesSunday": ""
     },
     {
         "email": "x",
-        "password": "x"
+        "password": "x",
+        "savedRecipesMonday": "",
+        "savedRecipesTuesday": "",
+        "savedRecipesWednesday": "",
+        "savedRecipesThursday": "",
+        "savedRecipesFriday": "",
+        "savedRecipesSaturday": "",
+        "savedRecipesSunday": ""
     }
 ]

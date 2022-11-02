@@ -40,12 +40,12 @@ const fridayDiv = document.getElementById('friday');
 const saturdayDiv = document.getElementById('saturday');
 const sundayDiv = document.getElementById('sunday');
 
-
-
-
 const searchButton = document.getElementById('button-addon2');
 const apiKey = 'apiKey=ac0d6fdd42e9490c9186a4a13ee7ab15';
-//let searchedIngredient = [];
+
+//todo: fetch recipe_names from db and display for days of week
+
+monday.textContent = fetch()
 
 
 // event listener for button
