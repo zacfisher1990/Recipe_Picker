@@ -2,7 +2,7 @@
 ![Screenshot of deployed application](./posts/path/to/img.jpg)
 
 ## Description
-A website designed to pick foods and/or create a meal plan for individuals based on their unique dietary needs.
+Need help planning meals or getting recipes for new meals? Well, you've come to the right place! Here on our app "Recipe Picker", you can do just that! We supply the user with different kinds of recipes for different kinds of ingredients and we only serve the best!
 
 ## Table of Contents
    - [Project Description](#description)
