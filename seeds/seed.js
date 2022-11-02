@@ -12,7 +12,7 @@ const seedDatabase = async () => {
     const user = await User.bulkCreate(userData, {
         individualHooks: true,
 
-        returning: rue,
+        returning: true,
     });
     console.log("user seed")
     // await seedRecipes();
