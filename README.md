@@ -1,5 +1,5 @@
 # Recipe Picker
-![Screenshot of deployed application](./posts/path/to/img.jpg)
+![Screenshot of deployed application](./assets/Images/Screenshot%20of%20App.png)
 
 ## Description
 Need help planning meals or getting recipes for new meals? Well, you've come to the right place! Here on our app "Recipe Picker", you can do just that! We supply the user with different kinds of recipes for different kinds of ingredients and we only serve the best!
