@@ -10,7 +10,7 @@ Need help planning meals or getting recipes for new meals? Well, you've come to 
    - [Contributors](#contributors)
 
 ## Application Deployed Link
-![Heroku Deployed Link](./posts/path/to/img.jpg)
+[Heroku Deployed Link](https://recipe--picker.herokuapp.com/)
 
 ## Contributors
 
