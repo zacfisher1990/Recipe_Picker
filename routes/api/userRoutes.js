@@ -1,28 +1,28 @@
 const router = require('express').Router();
 const { User } = require('../../models');
 
-router.post('/register', async (req, res) => {
-    const { email, password, confirmPassword} = req.body
-    try{
-        console.log(req.body, req.session);
-        if (!email || !password || !confirmPassword) {
-            console.log('userRoutes.js line 9', email, password, confirmPassword);
-            res.status(400).json({message: 'missing required properties in request body'}) 
-        }
-        if (password !== confirmPassword) {
-            console.log(password, confirmPassword)
-            res.status(400).json({message: 'passwords do not match'})
-        }
-
-        // const newUser = User.
-        // create new user, request new sessions to keep user login,
-
-    }catch (err){
-        console.log(err)
+// CREATE new user
+router.post('/', async (req, res) => {
+    try {
+      const userData = await User.create({
+        email: req.body.email,
+        password: req.body.password,
+      });
+  
+      // Set up sessions with a 'loggedIn' variable set to `true`
+      req.session.save(() => {
+        req.session.loggedIn = true;
+  
+        res.status(200).json(userData);
+      });
+    } catch (err) {
+      console.log(err);
+      res.status(500).json(err);
     }
-});
+  });
 
 
+// Login
 router.post('/login', async (req, res) => {
     try {
         const userData = await User.findOne({where: { email: req.body.email } });
@@ -67,7 +67,3 @@ router.post('/logout', (req, res) => {
 });
 
 module.exports = router;
-
-
-// start with api routee that registers a new user, this will be a post route that will check the request body to verify user models. If the user model passes authentication then...
-
