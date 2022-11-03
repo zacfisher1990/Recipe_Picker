@@ -31,6 +31,34 @@ User.init(
         len: [8],
       },
     },
+    savedRecipesMonday: {
+      type: DataTypes.STRING,
+      allowNull: true
+    },
+    savedRecipesTuesday: {
+      type: DataTypes.STRING,
+      allowNull: true
+    },
+    savedRecipesWednesday: {
+      type: DataTypes.STRING,
+      allowNull: true
+    },
+    savedRecipesThursday: {
+      type: DataTypes.STRING,
+      allowNull: true
+    },
+    savedRecipesFriday: {
+      type: DataTypes.STRING,
+      allowNull: true
+    },
+    savedRecipesSaturday: {
+      type: DataTypes.STRING,
+      allowNull: true
+    },
+    savedRecipesSunday: {
+      type: DataTypes.STRING,
+      allowNull: true
+    },
   },
   {
     hooks: {

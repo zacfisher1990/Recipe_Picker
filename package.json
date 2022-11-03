@@ -22,6 +22,7 @@
         "handlebars-helpers": "^0.10.0",
         "lodash": "^4.17.21",
         "mysql2": "^2.2.5",
-        "sequelize": "^6.3.5"
+        "sequelize": "^6.3.5",
+        "serve": "^14.0.1"
     }
 }
