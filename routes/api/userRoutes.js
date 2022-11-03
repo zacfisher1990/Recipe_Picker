@@ -20,7 +20,7 @@ router.post('/register', async (req, res) => {
     }catch (err){
         console.log(err)
     }
-})
+});
 
 
 router.post('/login', async (req, res) => {

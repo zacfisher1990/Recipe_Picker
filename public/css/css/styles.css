@@ -1,6 +1,29 @@
 body {
-  background-color: red;
+  background: #4d85a3;
+}
+main {
+  background-color: #868181;
+  box-shadow: 10px;
+  border-radius: 6;
 }
 header {
-  color: red;
+  color: #e4e4e4;
+  background-color: #000070;
+  font-family: fantasy;
+}
+main {
+  font-family: fantasy;
+}
+button {
+  color: #000000;
+}
+button,
+#button-addon2:hover {
+  color: #485fc7;
+}
+ul {
+  background-color: #e4e4e4;
+}
+#button-addon2 {
+  background-color: #e4e4e4;
 }

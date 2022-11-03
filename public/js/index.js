@@ -281,3 +281,16 @@ const logoutBtn = document.getElementById('logoutBtn');
 logoutBtn.addEventListener('click', function() {
     document.location.replace('/');
 });
+
+const clearBtn = document.getElementById("clearBtn");
+
+clearBtn.addEventListener('click', function(event){
+    event.preventDefault();
+    monday.textContent = "";
+    tuesday.textContent = "";
+    wednesday.textContent = "";
+    thursday.textContent = "";
+    friday.textContent = "";
+    saturday.textContent = "";
+    sunday.textContent = "";
+});
